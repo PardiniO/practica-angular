@@ -1,0 +1,9 @@
+<div>
+    <h2>Contador:</h2>
+    <h2>{{ valor }}</h2>
+    <div class="botones">
+        <button (click)="sumar()">Sumar</button>
+        <button (click)="restar()" [disabled]="valor === 0">Restar</button>
+        <button (click)="resetear()">Resetear</button>
+    </div>
+</div>

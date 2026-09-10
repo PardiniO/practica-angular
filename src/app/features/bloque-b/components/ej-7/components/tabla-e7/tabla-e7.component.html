@@ -1,0 +1,24 @@
+<div>
+    <h2>Ejercicio 7: Tabla con estado vacío</h2>
+    <p *ngIf="productos.length === 0">No hay productos cargados</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let producto of productos; let i = index"
+                [class.fila-par]="i % 2 === 0"
+                [class.fila-impar]="i % 2 !== 0"
+                [class.sin-stock]="producto.stock === 0"
+            >
+                <td>{{ producto.nombre }}</td>
+                <td>{{ producto.precio }}</td>
+                <td>{{ producto.stock }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

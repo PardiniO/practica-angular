@@ -1,0 +1,8 @@
+<div>
+    <h3>Alumno: {{ alumno.nombre }}</h3>
+    <p>Legajo: {{ alumno.legajo }}</p>
+    <p>Nota: {{ alumno.nota }}</p>
+    <p [ngClass]="aprobado() ? 'verde' : 'rojo' ">
+        {{ aprobado() ? 'APROBADO' : 'DESAPROBADO' }}
+    </p>
+</div>

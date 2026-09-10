@@ -1,0 +1,36 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+        padding: 10px 14px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    thead th {
+        background-color: #687769;
+        color: white;
+    }
+
+    .fila-par {
+        background-color: #fff;
+    }
+
+    .fila-impar {
+        background-color: #1d1d1d;
+    }
+}
+
+tr.sin-stock {
+    background-color: #e0e0e0 !important;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.alerta-vacio {
+    background-color: #bda454;
+    color: #856404;
+    border-radius: 4px;
+    display: inline-block;
+}

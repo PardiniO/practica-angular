@@ -1,0 +1,9 @@
+<div *ngIf="visible"
+    [ngClass]="{
+        'exito': tipo === 'exito',
+        'error': tipo === 'error',
+        'advertencia': tipo === 'advertencia'
+    }">
+
+    <p>{{ mensaje }}</p>
+</div>

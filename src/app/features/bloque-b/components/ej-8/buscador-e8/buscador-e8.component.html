@@ -1,0 +1,21 @@
+<div>
+    <h2>Ejercicio 8: Buscador en vivo</h2>
+    <div>
+        <input [(ngModel)]="busqueda" type="text" placeholder="Buscar...">
+    </div>
+    <div class="contador">
+        @if (busqueda.trim()) {
+            <p >Resultados encontrados: {{ buscar().length }}</p>
+            
+            @if (buscar().length === 0) {
+                <p>No hay resultados para "{{ busqueda }}"</p>
+            } @else {
+                <ul>
+                    @for (nombre of buscar(); track nombre) {
+                        <li>{{ nombre }}</li>
+                    }
+                </ul>
+            }
+        }
+    </div>
+</div>

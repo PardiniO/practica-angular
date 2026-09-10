@@ -1,0 +1,9 @@
+<div>
+    <h2>Ejercicio 9: Lista de tareas</h2>
+    <app-tarea-item-e9 
+        *ngFor="let t of tareas"
+        [id]="t.id"
+        [titulo]="t.titulo"
+        (tareaEliminada)="eliminarTareaPorId($event)"
+    ></app-tarea-item-e9>
+</div>

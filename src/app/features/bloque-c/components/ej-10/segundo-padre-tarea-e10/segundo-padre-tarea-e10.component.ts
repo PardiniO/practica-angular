@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Tarea } from "../../../../core/models/tarea";
+import { Tarea } from "../../../../../core/models/tarea";
 @Component({
   selector: 'app-segundo-padre-tarea-e10',
   templateUrl: './segundo-padre-tarea-e10.component.html',

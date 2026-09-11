@@ -1,0 +1,11 @@
+<div>
+    <h2>Ejercicio 10: Lista de tareas con evento distinto</h2>
+    <app-segunda-tarea-item-e10
+        *ngFor="let t of tareas"
+        [id]="t.id"
+        [titulo]="t.titulo"
+        [completada]="t.completada"
+        (tareaEliminada)="eliminarTareaPorId($event)"
+        (tareaCompletada)="completarTareaPorId($event)"
+    ></app-segunda-tarea-item-e10>
+</div>

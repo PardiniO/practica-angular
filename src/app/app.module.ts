@@ -14,6 +14,8 @@ import { TablaE7Component } from './features/bloque-b/components/ej-7/components
 import { BuscadorE8Component } from './features/bloque-b/components/ej-8/buscador-e8/buscador-e8.component';
 import { TareaItemE9Component } from './features/bloque-c/components/tarea-item-e9/tarea-item-e9.component';
 import { PadreTareaE9Component } from './features/bloque-c/components/padre-tarea-e9/padre-tarea-e9.component';
+import { SegundoPadreTareaE10Component } from './features/bloque-c/components/segundo-padre-tarea-e10/segundo-padre-tarea-e10.component';
+import { SegundaTareaItemE10Component } from './features/bloque-c/components/segunda-tarea-item-e10/segunda-tarea-item-e10.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { PadreTareaE9Component } from './features/bloque-c/components/padre-tare
     TablaE7Component,
     BuscadorE8Component,
     TareaItemE9Component,
-    PadreTareaE9Component
+    PadreTareaE9Component,
+    SegundoPadreTareaE10Component,
+    SegundaTareaItemE10Component
   ],
   imports: [
     BrowserModule,
